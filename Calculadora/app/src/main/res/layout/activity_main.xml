@@ -24,31 +24,31 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/calculo2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="154dp"
-        android:layout_marginEnd="361dp"
+        android:id="@+id/calculo1"
+        android:layout_width="307dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
         android:text=""
+        android:textAlignment="viewStart"
         android:textColor="@color/white"
         android:textSize="15dp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculo2"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/calculo1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="196dp"
-        android:layout_marginEnd="361dp"
+        android:id="@+id/calculo2"
+        android:layout_width="233dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="128dp"
         android:text=""
         android:textColor="@color/white"
         android:textSize="15dp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -57,56 +57,13 @@
         android:id="@+id/button5"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/naraja"
         android:text="5"
         android:textSize="20dp"
         app:layout_constraintEnd_toStartOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/button8"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button0"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/naraja"
-        android:text="0"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/resultado"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/divicion"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="64dp"
-        android:backgroundTint="@color/white"
-        android:text="/"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/multiplicacion"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="248dp"
-        android:layout_marginEnd="14dp"
-        android:backgroundTint="@color/naraja"
-        android:text="7"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/button8"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -124,36 +81,52 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/resultado"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="12dp"
-        android:backgroundTint="@color/naraja"
-        android:text="3"
+        android:backgroundTint="@color/white"
+        android:text="="
+        android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/multiplicacion"
-        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/divicion"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/suma"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/naraja"
-        android:text="2"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@color/white"
+        android:text="+"
+        android:textColor="@color/black"
         android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/divicion"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@color/white"
+        android:text="/"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiplicacion"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="260dp"
         android:layout_marginEnd="12dp"
         android:backgroundTint="@color/naraja"
         android:text="9"
@@ -163,16 +136,58 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/button3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/naraja"
+        android:text="3"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/multiplicacion"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        tools:ignore="MissingConstraints" />
+
+    <Button
         android:id="@+id/button8"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="260dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/naraja"
         android:text="8"
         android:textSize="20dp"
         app:layout_constraintEnd_toStartOf="@+id/button9"
         app:layout_constraintTop_toBottomOf="@+id/titulo"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/naraja"
+        android:text="2"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/naraja"
+        android:text="1"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -190,73 +205,59 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/button4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/naraja"
+        android:text="4"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/naraja"
+        android:text="7"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
         android:id="@+id/eliminar"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="14dp"
         android:backgroundTint="@color/white"
         android:text="CE"
         android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintEnd_toStartOf="@+id/button0"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/suma"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="248dp"
-        android:layout_marginEnd="64dp"
-        android:backgroundTint="@color/white"
-        android:text="+"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="14dp"
-        android:backgroundTint="@color/naraja"
-        android:text="1"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="14dp"
-        android:backgroundTint="@color/naraja"
-        android:text="4"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="12dp"
         android:backgroundTint="@color/naraja"
         android:text="6"
@@ -266,17 +267,16 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/resultado"
+        android:id="@+id/button0"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="12dp"
-        android:backgroundTint="@color/white"
-        android:text="="
-        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/naraja"
+        android:text="0"
         android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/divicion"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/resultado"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
